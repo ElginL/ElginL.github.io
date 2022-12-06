@@ -1,0 +1,53 @@
+.about-header {
+    margin: 0;
+    color: aquamarine;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.container {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+.content-container {
+    display: flex;
+    gap: 10vw;
+}
+
+.image-container {
+    border: 5px solid aquamarine;
+}
+
+.my-face {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    top: -8px;
+    left: -8px;
+}
+
+.text-container {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tech-images-container {
+    display: flex;
+    gap: 20px;
+}
