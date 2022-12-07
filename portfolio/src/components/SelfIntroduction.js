@@ -1,5 +1,6 @@
 import styles from '../styles/components/SelfIntroduction.module.css';
 import portrait from '../assets/portrait.svg';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const SelfIntroduction = () => {
     return (
@@ -18,11 +19,11 @@ const SelfIntroduction = () => {
                     <p className={styles["text"]}>
                         National University Of Singapore
                     </p>
-                    <a href="#" className={styles["view-button"]}>
+                    <Link to="#portfolio" className={styles["view-button"]}>
                         View My Work
-                    </a>
+                    </Link>
                 </div>
-                <img src={portrait} alt="Personal Portrait" />
+                <img src={portrait} alt="Personal Portrait" className={styles["portrait"]} />
             </div>
         </div>
     )

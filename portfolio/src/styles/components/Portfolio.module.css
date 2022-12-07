@@ -1,0 +1,60 @@
+.container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.featured-header {
+    color: orange;
+    margin-top: 25px;
+}
+
+.portfolio-header {
+    margin: 0;
+    text-align: center;
+    color: aquamarine;
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 45vw;
+    gap: 30px;
+}
+
+@media (max-width: 1800px) {
+    .projects-container {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 1400px) {
+    .projects-container {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects-container {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 940px) {
+    .projects-container {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-header {
+        font-size: 3rem;
+    }
+}

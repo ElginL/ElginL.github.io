@@ -6,7 +6,7 @@
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     color: white;
     display: flex;
@@ -47,7 +47,38 @@
     gap: 20px;
 }
 
+.tech-stack-container > h3 {
+    text-align: center;
+}
+
 .tech-images-container {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1300px) {
+    .text-container {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-header {
+        font-size: 3rem;
+    }
+    
+    .my-face {
+        width: 150px;
+        height: 225px;
+    }
+
+    .content-container {
+        align-items: center;
+    }
+
+    .text-container {
+        font-size: 0.8rem;
+    }
 }

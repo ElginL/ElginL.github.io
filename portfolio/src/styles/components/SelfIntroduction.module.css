@@ -1,5 +1,5 @@
 .background-img {
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     color: white;
     display: flex;
@@ -29,6 +29,7 @@
 .role {
     font-size: 2rem;
     color: aquamarine;
+    text-align: center;
 }
 
 .text {
@@ -50,4 +51,51 @@
     cursor: pointer;
     background-color: rgb(71, 165, 134);
     transition: background-color 0.5s;
+}
+
+@media (max-width: 1280px) {
+    .content-container {
+        gap: 0vw;
+    }
+}
+
+@media (max-width: 990px) {
+    .portrait {
+        width: 200px;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .role {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .portrait {
+        width: 150px;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .role {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 0.75rem;
+    }
+
+    .view-button {
+        font-size: 1.1rem;
+        padding: 5px 15px;
+    }
 }
