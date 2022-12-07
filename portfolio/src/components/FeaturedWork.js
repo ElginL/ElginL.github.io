@@ -1,10 +1,11 @@
+import "aos/dist/aos.css";
 import styles from '../styles/components/FeaturedWork.module.css';
 import { Link } from 'react-router-dom';
 import GithubImg from '../assets/github.svg'; 
 
 const FeaturedWork = ({ image, workTitle, workDescription, technologies, isNotFlipped, isSmallImage, githubLink }) => {
     return (
-        <div className={ isNotFlipped ? styles["container"] : styles["flipped-container"] }>
+        <div className={ isNotFlipped ? styles["container"] : styles["flipped-container"] } data-aos="fade-up">
             <div className={ isNotFlipped ? styles["text-container"] : styles["text-container-flipped"]}>
                 <h3 className={styles["work-title"]}>
                     {workTitle}

@@ -1,4 +1,5 @@
 import styles from '../styles/components/AboutMe.module.css';
+import "aos/dist/aos.css";
 import TechStack from './TechStack';
 import MyFace from '../assets/MyFace.jpg';
 import HtmlImg from '../assets/html.svg';
@@ -14,11 +15,11 @@ import JavaImg from '../assets/java.svg';
 const AboutMe = () => {
     return (
         <div className={styles["container"]}>
-            <h1 className={styles["about-header"]}>
+            <h1 className={styles["about-header"]} data-aos="fade-up">
                 About
             </h1>
             <div className={styles["content-container"]}>
-                <div className={styles["text-container"]}>
+                <div className={styles["text-container"]} data-aos="fade-up">
                     <h2>
                         Who am I?
                     </h2>
@@ -31,11 +32,11 @@ const AboutMe = () => {
                         I hope to gain the invaluable experience of working with others and learning more things.
                     </p>
                 </div>
-                <div className={styles["image-container"]}>
+                <div className={styles["image-container"]} data-aos="fade-up">
                     <img src={MyFace} alt="My Portrait" className={styles["my-face"]} />
                 </div>
             </div>
-            <div className={styles["tech-stack-container"]}>
+            <div className={styles["tech-stack-container"]} data-aos="fade-up">
                 <h3>
                     Here are the few technologies I have worked with recently
                 </h3>
