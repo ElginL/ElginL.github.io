@@ -46,12 +46,12 @@
     margin-top: 30px;
     text-decoration: none;
     color: black;
+    transition: background-color 0.5s;
 }
 
 .view-button:hover {
     cursor: pointer;
     background-color: rgb(71, 165, 134);
-    transition: background-color 0.5s;
 }
 
 @keyframes transitionIn {

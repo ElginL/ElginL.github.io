@@ -14,7 +14,7 @@ import JavaImg from '../assets/java.svg';
 
 const AboutMe = () => {
     return (
-        <div className={styles["container"]}>
+        <div id="about-me" className={styles["container"]}>
             <h1 className={styles["about-header"]} data-aos="fade-up">
                 About
             </h1>

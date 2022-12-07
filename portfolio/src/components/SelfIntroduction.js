@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const SelfIntroduction = () => {
     return (
-        <div className={styles["background-img"]}>
+        <div id="self-introduction" className={styles["background-img"]}>
             <div className={styles["content-container"]}>
                 <div className={styles["left-container"]}>
                     <h1 className={styles["name"]}>
