@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Personal-Portfolio/static/css/main.ec297c57.css",
+    "main.js": "/Personal-Portfolio/static/js/main.2532e8b1.js",
+    "static/media/inventory.png": "/Personal-Portfolio/static/media/inventory.3fd310caf544b5b8b439.png",
+    "static/media/blog.png": "/Personal-Portfolio/static/media/blog.4321d0926faabc14e9af.png",
+    "static/media/shop.png": "/Personal-Portfolio/static/media/shop.1e95a1c89ff60cc05f8a.png",
+    "static/media/MyFace.jpg": "/Personal-Portfolio/static/media/MyFace.5f01fe3a42db5c3305df.jpg",
+    "static/media/dashboard.jpg": "/Personal-Portfolio/static/media/dashboard.c74a90e31ff0eb273b6f.jpg",
+    "static/media/cv.png": "/Personal-Portfolio/static/media/cv.3542d9ee2104ac60c80a.png",
+    "static/media/portrait.svg": "/Personal-Portfolio/static/media/portrait.365a4c2001d51d16d668fb4fa738871b.svg",
+    "static/media/ip.png": "/Personal-Portfolio/static/media/ip.2b418148d4c2f78ce177.png",
+    "static/media/splinkty.jpg": "/Personal-Portfolio/static/media/splinkty.9ba938d2a2bb591262db.jpg",
+    "static/media/tp.png": "/Personal-Portfolio/static/media/tp.2032fb722cd530969776.png",
+    "static/media/react-native.svg": "/Personal-Portfolio/static/media/react-native.453227c1d22adb9dde6f27a3b41846de.svg",
+    "static/media/express.svg": "/Personal-Portfolio/static/media/express.ed3465c303f9cf65c6be5e21deb7d08b.svg",
+    "static/media/java.svg": "/Personal-Portfolio/static/media/java.06a8d5306c4bb2b63bfa17fba29b06f4.svg",
+    "static/media/react.svg": "/Personal-Portfolio/static/media/react.73267c1ff791c8019c10e06fe5b30946.svg",
+    "static/media/firebase.svg": "/Personal-Portfolio/static/media/firebase.cf502f2f505e836f26bfee47afd21ff3.svg",
+    "static/media/mongodb.svg": "/Personal-Portfolio/static/media/mongodb.d90e5488f29d90ae832fd0680d57675e.svg",
+    "static/media/javascript.svg": "/Personal-Portfolio/static/media/javascript.f3a32d4f2c4932b9bf076827cec6f8ed.svg",
+    "index.html": "/Personal-Portfolio/index.html",
+    "static/media/github.svg": "/Personal-Portfolio/static/media/github.d4577cfbb9306cfe891b2ac5c1586b8c.svg",
+    "static/media/css.svg": "/Personal-Portfolio/static/media/css.49b0561c581481ac32731dc62a59273f.svg",
+    "static/media/html.svg": "/Personal-Portfolio/static/media/html.75448f7172e8756d45c40c572108de83.svg",
+    "main.ec297c57.css.map": "/Personal-Portfolio/static/css/main.ec297c57.css.map",
+    "main.2532e8b1.js.map": "/Personal-Portfolio/static/js/main.2532e8b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec297c57.css",
+    "static/js/main.2532e8b1.js"
+  ]
+}
