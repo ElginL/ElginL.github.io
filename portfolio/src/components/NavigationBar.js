@@ -24,18 +24,18 @@ const NavigationBar = () => {
     return (
         <nav className={styles["nav-bar"]} style={{ top: visible ? '0' : '-60px' }}>
             <h3>
-                <Link to="#self-introduction" className={styles["left-link"]}>
+                <Link to="/#self-introduction" className={styles["left-link"]}>
                     &#91;ElginL&#93;
                 </Link>
             </h3>
             <ul className={styles["right-container"]}>
                 <li>
-                    <Link to="#about-me" className={styles["right-link"]}>
+                    <Link to="/#about-me" className={styles["right-link"]}>
                         About Me
                     </Link>
                 </li>
                 <li>
-                    <Link to="#portfolio" className={styles["right-link"]}>
+                    <Link to="/#portfolio" className={styles["right-link"]}>
                         Portfolio
                     </Link>
                 </li>

@@ -21,7 +21,7 @@ const FeaturedWork = ({ image, workTitle, workDescription, technologies, isNotFl
                 </a>
             </div>
             <div className={styles["image-container"]}>
-                <Link to="/">
+                <Link to="/splinkty">
                     <div className={ isSmallImage ? styles["small-layer"] : styles["large-layer"]}></div>
                 </Link>
                 <img 

@@ -8,14 +8,15 @@ import DashboardImg from '../assets/dashboard.jpg';
 import CvImg from '../assets/cv.png';
 import BlogImg from '../assets/blog.png';
 import InventoryImg from '../assets/inventory.png';
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
     return (
         <div id="portfolio" className={styles["container"]}>
-            <h1 className={styles["portfolio-header"]}>
+            <h1 className={styles["portfolio-header"]} data-aos="fade-up">
                 Portfolio
             </h1>
-            <h2 className={styles["featured-header"]}>
+            <h2 className={styles["featured-header"]} data-aos="fade-up">
                 Featured work
             </h2>
             <div className={styles["projects-container"]}>

@@ -1,0 +1,23 @@
+.app-ss {
+    width: 250px;
+    height: 450px;
+}
+
+.container {
+    background-color: black;
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+}
+
+.content-container {
+    width: 40vw;
+    line-height: 26px;
+}
