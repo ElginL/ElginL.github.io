@@ -3,7 +3,7 @@ import styles from '../styles/components/SlidingWindow.module.css';
 import ForwardArrow from '../assets/forwardarrow.png';
 import BackwardArrow from '../assets/backarrow.png';
 
-const SlidingWindow = ({ title, images, siteLink, codeLink  }) => {
+const SlidingWindow = ({ title, images, siteLink, codeLink, isLargeDisplay }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextButtonHandler = () => {
@@ -36,10 +36,14 @@ const SlidingWindow = ({ title, images, siteLink, codeLink  }) => {
                 />
                 {
                     images.map((image, index) => (
-                        <div className={index === currentSlide ? styles["active"] : styles["inactive"] }>
+                        <div className={index === currentSlide ? styles["active"] : styles["inactive"] } key={index}>
                             {
                                 index === currentSlide
-                                    ? <img src={image} alt="App Screenshot" className={styles["image"]} />
+                                    ? <img 
+                                        src={image} 
+                                        alt="App Screenshot" 
+                                        className={ isLargeDisplay ? styles["large-image"] : styles["small-image"]} 
+                                      />
                                     : null
                             }
                         </div>
@@ -53,10 +57,10 @@ const SlidingWindow = ({ title, images, siteLink, codeLink  }) => {
                 />
             </div>
             <div className={styles["links-container"]}>
-                <a className={styles["site-link"]} href={siteLink} target="_blank">
+                <a className={styles["site-link"]} href={siteLink} target="_blank" rel="noreferrer">
                     View Site
                 </a>
-                <a className={styles["code-link"]} href={codeLink} target="_blank">
+                <a className={styles["code-link"]} href={codeLink} target="_blank" rel="noreferrer">
                     Code
                 </a>
             </div>

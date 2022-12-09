@@ -1,7 +1,7 @@
 import DetailedWork from '../components/DetailedWork';
-import { splinktyDetails as details } from '../data/SplinktyPage';
+import { jeeqtrackerDetails as details } from '../data/JeeqTrackerPage';
 
-const Splinkty = () => {
+const JeeqTracker = () => {
     return (
         <DetailedWork
             workTitle={details.workTitle}
@@ -10,8 +10,9 @@ const Splinkty = () => {
             codeLink={details.codeLink}
             description={details.description}
             learningPoints={details.learningPoints}
+            isLargeDisplay={true}
         />
     );
 };
 
-export default Splinkty;
+export default JeeqTracker;

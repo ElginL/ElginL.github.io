@@ -3,7 +3,7 @@ import styles from '../styles/components/FeaturedWork.module.css';
 import { Link } from 'react-router-dom';
 import GithubImg from '../assets/github.svg'; 
 
-const FeaturedWork = ({ image, workTitle, workDescription, technologies, isNotFlipped, isSmallImage, githubLink }) => {
+const FeaturedWork = ({ image, workTitle, workDescription, technologies, isNotFlipped, isSmallImage, githubLink, detailedPageLink }) => {
     return (
         <div className={ isNotFlipped ? styles["container"] : styles["flipped-container"] } data-aos="fade-up">
             <div className={ isNotFlipped ? styles["text-container"] : styles["text-container-flipped"]}>
@@ -16,12 +16,12 @@ const FeaturedWork = ({ image, workTitle, workDescription, technologies, isNotFl
                 <p className={styles["technologies-description"]}>
                     {technologies}
                 </p>
-                <a href={githubLink} target="_blank">
+                <a href={githubLink} target="_blank" rel="noreferrer">
                     <img src={GithubImg} alt="Github Icon" />
                 </a>
             </div>
             <div className={styles["image-container"]}>
-                <Link to="/splinkty">
+                <Link to={detailedPageLink}>
                     <div className={ isSmallImage ? styles["small-layer"] : styles["large-layer"]}></div>
                 </Link>
                 <img 

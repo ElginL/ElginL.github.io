@@ -16,10 +16,15 @@
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-.image {
+.small-image {
     height: 400px;
     width: 250px;
     border: 1px solid black;
+}
+
+.large-image {
+    height: 400px;
+    width: 500px;
 }
 
 .title {
