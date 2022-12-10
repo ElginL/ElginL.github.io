@@ -27,10 +27,6 @@ const windowImages = [
 
 const workTitle = "Splinkty Mobile Application";
 
-const siteLink = "https://github.com/ElginL/orbital-splinkty/releases/tag/v1.2.0";
-
-const codeLink = "https://github.com/ElginL/orbital-splinkty";
-
 const description = `
     In a team of 2, we created this application to reduce the hassle of bill splitting among friends. 
     We believe that bill splitting should not take away time from social gatherings, 
@@ -48,8 +44,6 @@ const learningPoints = [
 
 export const splinktyDetails = {
     workTitle,
-    siteLink,
-    codeLink,
     description,
     learningPoints,
     windowImages

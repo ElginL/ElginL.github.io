@@ -3,7 +3,7 @@ import styles from '../styles/components/SlidingWindow.module.css';
 import ForwardArrow from '../assets/forwardarrow.png';
 import BackwardArrow from '../assets/backarrow.png';
 
-const SlidingWindow = ({ title, images, siteLink, codeLink, isLargeDisplay }) => {
+const SlidingWindow = ({ title, images, isLargeDisplay }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextButtonHandler = () => {
@@ -55,14 +55,6 @@ const SlidingWindow = ({ title, images, siteLink, codeLink, isLargeDisplay }) =>
                     className={styles["arrow"]}
                     onClick={nextButtonHandler}
                 />
-            </div>
-            <div className={styles["links-container"]}>
-                <a className={styles["site-link"]} href={siteLink} target="_blank" rel="noreferrer">
-                    View Site
-                </a>
-                <a className={styles["code-link"]} href={codeLink} target="_blank" rel="noreferrer">
-                    Code
-                </a>
             </div>
         </div>
     );

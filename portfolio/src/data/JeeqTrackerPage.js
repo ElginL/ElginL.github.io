@@ -5,17 +5,13 @@ import ViewImg from '../assets/JeeqTrackerImages/view.jpg';
 
 // The order matters!
 const windowImages = [
-    BuyImg,
     HomeImg,
+    ViewImg,
+    BuyImg,
     RemarkImg,
-    ViewImg
 ];
 
 const workTitle = "JeeqTracker Desktop Application";
-
-const siteLink = "https://ay2223s1-cs2103t-t09-1.github.io/tp/";
-
-const codeLink = "https://github.com/AY2223S1-CS2103T-T09-1/tp";
 
 const description = `
     In a team of 5, we created this application to provide an extremely fast and simple way
@@ -24,7 +20,7 @@ const description = `
 `;
 
 const learningPoints = [
-    "Making use of an issue tracker &#40;Github Issues&#41; to assign tasks so that everyone in the team knows what to do and when to finish it",
+    "Making use of an issue tracker (Github Issues) to assign tasks so that everyone in the team knows what to do and when to finish it",
     "Using Github milestones for major accomplishments, to mark the end of a project iteration",
     "Understanding the existence of code design patterns and applying them, such as the Facade pattern and Command pattern to improve code quality",
     "The process of fixing merge conflicts efficiently, and the importance of early and frequent integration to reduce them",
@@ -34,8 +30,6 @@ const learningPoints = [
 
 export const jeeqtrackerDetails = {
     workTitle,
-    siteLink,
-    codeLink,
     description,
     learningPoints,
     windowImages

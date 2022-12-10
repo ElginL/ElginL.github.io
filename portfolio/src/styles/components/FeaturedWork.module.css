@@ -36,6 +36,22 @@
     background-color: rgba(116, 230, 192, 0);
 }
 
+.links,
+.flipped-links {
+    display: flex;
+    gap: 8px;
+}
+
+.links {
+    flex-direction: row-reverse;
+}
+
+.links img,
+.flipped-links img {
+    width: 30px;
+    height: 30px;
+}
+
 .work-description {
     margin: 0;
     font-size: 0.9rem;

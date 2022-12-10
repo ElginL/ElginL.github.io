@@ -18,16 +18,18 @@ const splinkty = {
     technologies: "React Native, Redux, Firebase, Google Vision",
     isSmallImage: true,
     githubLink: "https://github.com/ElginL/orbital-splinkty",
+    documentationLink: "https://docs.google.com/document/d/1wxOJXFmzOhmPIT4zsi2D_0AZhgbU9UTf-Zc0Z872Vlo/edit?usp=sharing",
     pathToDetailedPage: "/splinkty"
 };
 
 const jeeqTracker = {
     image: JeeqTrackerImg,
     workTitle: "JeeqTracker",
-    workDescription: "Desktop application that provides an extremly fast and simple way for home-based business owners to keep track of their clients, transactions, and remarks",
+    workDescription: "Desktop application that provides an extremely fast and simple way for home-based business owners to keep track of their clients, transactions, and remarks",
     technologies: "Java, JavaFX, JUnit5",
     isSmallImage: false,
     githubLink: "https://github.com/ElginL/tp",
+    documentationLink: "https://ay2223s1-cs2103t-t09-1.github.io/tp/",
     pathToDetailedPage: "/jeeqtracker"
 };
 
@@ -38,6 +40,7 @@ const duke = {
     technologies: "Java, JavaFX, JUnit5",
     isSmallImage: true,
     githubLink: "https://github.com/ElginL/ip",
+    documentationLink: "https://elginl.github.io/ip/",
     pathToDetailedPage: "/duke"
 };
 
@@ -48,6 +51,7 @@ const shoppingCart = {
     technologies: "ReactJS, JavaScript, CSS",
     isSmallImage: false,
     githubLink: "https://github.com/ElginL/odin-shopping-cart",
+    websiteLink: "https://elginl.github.io/odin-shopping-cart/",
     pathToDetailedPage: "/shoppingcart"
 };
 
@@ -58,6 +62,7 @@ const dashboard = {
     technologies: "HTML, CSS",
     isSmallImage: false,
     githubLink: "https://github.com/ElginL/odin-dashboard",
+    websiteLink: "https://elginl.github.io/odin-dashboard/",
     pathToDetailedPage: "/dashboard"
 };
 
@@ -68,6 +73,7 @@ const cvMaker = {
     technologies: "ReactJS, CSS",
     isSmallImage: false,
     githubLink: "https://github.com/ElginL/odin-create-cv-app",
+    websiteLink: "https://elginl.github.io/odin-create-cv-app/",
     pathToDetailedPage: "/cvmaker"
 };
 

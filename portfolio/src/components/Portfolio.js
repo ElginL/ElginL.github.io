@@ -24,6 +24,8 @@ const Portfolio = () => {
                             isSmallImage={work.isSmallImage}
                             isNotFlipped={index % 2 === 0}
                             detailedPageLink={work.pathToDetailedPage}
+                            documentationLink={work.documentationLink}
+                            websiteLink={work.websiteLink}
                             key={index}
                         />
                     ))
