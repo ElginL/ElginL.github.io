@@ -11,6 +11,7 @@ import MongodbImg from '../assets/mongodb.svg';
 import ReactNativeImg from '../assets/react-native.svg';
 import FirebaseImg from '../assets/firebase.svg';
 import JavaImg from '../assets/java.svg';
+import CIconImg from '../assets/cIcon.svg';
 
 const AboutMe = () => {
     return (
@@ -50,6 +51,7 @@ const AboutMe = () => {
                     <TechStack image={ReactNativeImg} label="React Native" />
                     <TechStack image={FirebaseImg} label="Firebase" />
                     <TechStack image={JavaImg} label="Java" />
+                    <TechStack image={CIconImg} label="C" />
                 </div>
             </div>
         </div>

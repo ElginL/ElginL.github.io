@@ -39,8 +39,8 @@ const NavigationBar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/" className={styles["right-link"]}>
-                        Resume
+                    <Link to="/#contact" className={styles["right-link"]}>
+                        Contact
                     </Link>
                 </li>
             </ul>
