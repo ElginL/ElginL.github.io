@@ -39,22 +39,6 @@
     margin: 0;
 }
 
-.view-button {
-    background-color: aquamarine;
-    font-size: 1.3rem;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin-top: 30px;
-    text-decoration: none;
-    color: black;
-    transition: background-color 0.5s;
-}
-
-.view-button:hover {
-    cursor: pointer;
-    background-color: rgb(71, 165, 134);
-}
-
 .portrait {
     width: 500px;
 }
@@ -110,10 +94,5 @@
 
     .text {
         font-size: 0.75rem;
-    }
-
-    .view-button {
-        font-size: 1.1rem;
-        padding: 5px 15px;
     }
 }
