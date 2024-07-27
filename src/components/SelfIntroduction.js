@@ -19,9 +19,6 @@ const SelfIntroduction = () => {
                     <p className={styles["text"]}>
                         National University Of Singapore
                     </p>
-                    <Link to="#portfolio" className={styles["view-button"]}>
-                        View My Work
-                    </Link>
                 </div>
                 <img src={portrait} alt="Personal Portrait" className={styles["portrait"]} />
             </div>
