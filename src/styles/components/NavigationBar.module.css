@@ -1,41 +1,29 @@
 .nav-bar {
-    position: fixed;
-    background-color: #232323;
+    position: absolute;
     color: white;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 0 5px;
+    justify-content: center;
+}
+
+.sticky-nav-bar {
+    position: fixed;
+    background-color: rgb(10, 10, 10);
     z-index: 10;
     transition: top 0.5s;
-    animation: transitionIn 2s;
+    animation: transitionIn 1s;
 }
 
-.right-container {
+.container {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 50px;
+    font-size: 1.25rem;
 }
 
-.right-link {
+.link {
     text-decoration: none;
-    color: white;
     transition: color 0.5s;
-}
-
-.right-link:hover {
-    color: orange;
-}
-
-.left-link {
-    text-decoration: none;
-    color: aquamarine;
-    transition: color 0.5s;
-}
-
-.left-link:hover {
-    color: rgb(71, 165, 134);
 }
 
 @keyframes transitionIn {

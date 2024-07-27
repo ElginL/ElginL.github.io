@@ -3,46 +3,56 @@ import styles from '../styles/components/NavigationBar.module.css';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const NavigationBar = () => {
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true);
-
+    const [isAboveThreshold, setIsAboveThreshold] = useState(false);
+    const [hoveredLink, setHoveredLink] = useState(null);
     
+    const handleScroll = () => {
+        const viewportHeight = window.innerHeight;
+        setIsAboveThreshold(window.scrollY > 0.7 * viewportHeight);
+    }
+
     useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
-    
-            setVisible(prevScrollPos > currentScrollPos);
-            setPrevScrollPos(currentScrollPos);
-        };
-
         window.addEventListener('scroll', handleScroll);
 
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollPos, visible]);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const linkColorHandler = index => {
+        return hoveredLink !== null && hoveredLink !== index ? 
+            (isAboveThreshold ? "#367e8a" : "grey" ) : 
+            (isAboveThreshold ? "#54d8ef" : "white");
+    }
+
+    const links = [
+        { to: "/#self-introduction", description: "Home" },
+        { to: "/#about-me", description: "About" },
+        { to: "/", description: "Experiences"},
+        { to: "/#portfolio", description: "Projects" },
+        { to: "/#contact", description: "Contact" }
+    ]
 
     return (
-        <nav className={styles["nav-bar"]} style={{ top: visible ? '0' : '-60px' }}>
-            <h3>
-                <Link to="/#self-introduction" className={styles["left-link"]}>
-                    &#91;ElginL&#93;
-                </Link>
-            </h3>
-            <ul className={styles["right-container"]}>
-                <li>
-                    <Link to="/#about-me" className={styles["right-link"]}>
-                        About Me
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/#portfolio" className={styles["right-link"]}>
-                        Portfolio
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/#contact" className={styles["right-link"]}>
-                        Contact
-                    </Link>
-                </li>
+        <nav className={`${styles["nav-bar"]} ${isAboveThreshold ? styles["sticky-nav-bar"] : ""}`}>
+            <ul className={styles["container"]}>
+                {
+                    links.map((link, index) => (
+                        <li>
+                            <Link
+                                to={link["to"]}
+                                className={styles["link"]}
+                                onMouseEnter={() => setHoveredLink(index)}
+                                onMouseLeave={() => setHoveredLink(null)}  
+                                style={{
+                                    color: linkColorHandler(index)
+                                }}  
+                            >
+                                {link["description"]}
+                            </Link>
+                        </li>
+                    ))
+                }
             </ul>
         </nav>
     );
