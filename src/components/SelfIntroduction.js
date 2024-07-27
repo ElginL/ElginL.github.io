@@ -1,5 +1,5 @@
 import styles from '../styles/components/SelfIntroduction.module.css';
-import portrait from '../assets/portrait.svg';
+import portrait from '../assets/portrait.png';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const SelfIntroduction = () => {
@@ -11,10 +11,10 @@ const SelfIntroduction = () => {
                         Elgin Lee
                     </h1>
                     <h3 className={styles["role"]}>
-                        Aspiring Full Stack Software Developer
+                        Aspiring Software Developer
                     </h3>
                     <p className={styles["text"]}>
-                        Year 2 Computer Science Student
+                        Final Year Computer Science
                     </p>
                     <p className={styles["text"]}>
                         National University Of Singapore
