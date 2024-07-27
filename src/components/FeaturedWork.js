@@ -1,7 +1,7 @@
 import "aos/dist/aos.css";
 import styles from '../styles/components/FeaturedWork.module.css';
 import { Link } from 'react-router-dom';
-import GithubImg from '../assets/github.svg'; 
+import GithubImg from '../assets/TechLogos/github.svg'; 
 import DocumentationImg from '../assets/documentation.svg';
 import WebsiteImg from '../assets/website.svg';
 

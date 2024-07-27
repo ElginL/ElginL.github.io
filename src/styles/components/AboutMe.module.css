@@ -2,7 +2,7 @@
     margin: 0;
     color: aquamarine;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 .container {
@@ -16,28 +16,12 @@
     gap: 10vh;
 }
 
-.content-container {
-    display: flex;
-    gap: 10vw;
-}
-
-.image-container {
-    border: 5px solid aquamarine;
-}
-
-.my-face {
-    width: 250px;
-    height: 350px;
-    position: relative;
-    top: -8px;
-    left: -8px;
-}
-
 .text-container {
-    width: 20vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.35rem;
 }
 
 .tech-stack-container {
@@ -53,9 +37,10 @@
 
 .tech-images-container {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
+    width: 70%;
 }
 
 @media (max-width: 1300px) {

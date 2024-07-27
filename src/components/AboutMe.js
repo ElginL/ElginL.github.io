@@ -1,57 +1,83 @@
 import styles from '../styles/components/AboutMe.module.css';
 import "aos/dist/aos.css";
 import TechStack from './TechStack';
-import MyFace from '../assets/MyFace.jpg';
-import HtmlImg from '../assets/html.svg';
-import CssImg from '../assets/css.svg';
-import JavascriptImg from '../assets/javascript.svg';
-import ReactImg from '../assets/react.svg';
-import ExpressImg from '../assets/express.svg';
-import MongodbImg from '../assets/mongodb.svg';
-import ReactNativeImg from '../assets/react-native.svg';
-import FirebaseImg from '../assets/firebase.svg';
-import JavaImg from '../assets/java.svg';
-import CIconImg from '../assets/cIcon.svg';
+import HtmlImg from '../assets/TechLogos/html.svg';
+import CssImg from '../assets/TechLogos/css.svg';
+import JavascriptImg from '../assets/TechLogos/javascript.svg';
+import ReactImg from '../assets/TechLogos/react.svg';
+import ExpressImg from '../assets/TechLogos/express.svg';
+import MongodbImg from '../assets/TechLogos/mongodb.svg';
+import ReactNativeImg from '../assets/TechLogos/react-native.svg';
+import FirebaseImg from '../assets/TechLogos/firebase.svg';
+import JavaImg from '../assets/TechLogos/java.svg';
+import CIconImg from '../assets/TechLogos/cIcon.svg';
+import CSharpImg from '../assets/TechLogos/c--4.svg';
+import DockerImg from '../assets/TechLogos/docker.svg';
+import KubernetesImg from '../assets/TechLogos/kubernetes.svg';
+import GHAImg from '../assets/TechLogos/gha.svg';
+import PostgresqlImg from '../assets/TechLogos/postgresql.svg';
+import HelmImg from '../assets/TechLogos/helm.svg';
+import KeycloakImg from '../assets/TechLogos/keycloak.svg';
+import WebsocketImg from '../assets/TechLogos/socket-io.svg';
+import BashImg from '../assets/TechLogos/bash.svg';
+import RedisImg from '../assets/TechLogos/redis.svg';
+import RabbitMqImg from '../assets/TechLogos/rabbitmq.svg';
+import OpenTelemetryImg from '../assets/TechLogos/OpenTelemetry.svg';
+import GrafanaImg from '../assets/TechLogos/Grafana.svg';
+import PythonImg from '../assets/TechLogos/Python.svg';
 
 const AboutMe = () => {
+    const technologies = [
+        { image: HtmlImg, label: "HTML" },
+        { image: CssImg, label: "CSS" },
+        { image: JavascriptImg, label: "JavaScript" },
+        { image: ReactImg, label: "React" },
+        { image: ExpressImg, label: "Express" },
+        { image: MongodbImg, label: "MongoDB" },
+        { image: PostgresqlImg, label: "Postgresql" },
+        { image: WebsocketImg, label: "Socket.io" },
+        { image: JavaImg, label: "Java" },
+        { image: CIconImg, label: "C" },
+        { image: PythonImg, label: "Python" },
+        { image: CSharpImg, label: "C#" },
+        { image: DockerImg, label: "Docker" },
+        { image: KubernetesImg, label: "Kubernetes" },
+        { image: HelmImg, label: "Helm" },
+        { image: GHAImg, label: "Github Actions" },
+        { image: KeycloakImg, label: "Keycloak" },
+        { image: BashImg, label: "Bash Scripting" },
+        { image: RabbitMqImg, label: "RabbitMQ" },
+        { image: OpenTelemetryImg, label: "OpenTelemetry" },
+        { image: GrafanaImg, label: "Grafana" },
+        { image: RedisImg, label: "Redis" },
+        { image: ReactNativeImg, label: "React Native" },
+        { image: FirebaseImg, label: "Firebase" },
+    ];
+
     return (
         <div id="about-me" className={styles["container"]}>
             <h1 className={styles["about-header"]} data-aos="fade-up">
                 About
             </h1>
-            <div className={styles["content-container"]}>
-                <div className={styles["text-container"]} data-aos="fade-up">
-                    <h2>
-                        Who am I?
-                    </h2>
-                    <p>
-                        I'm a person with strong interest in Web Development and Mobile Development because I have a clear view of the things I have built,
-                        which ignites my motivation to do much more. 
-                    </p>
-                    <p>
-                        Today, I am looking for an internship as a Software Developer from <em>8 May 2023 to 20 Oct 2023</em> or <em>8 May 2023 to 8 July 2023</em>.
-                        I hope to gain the invaluable experience of working with others and learning more things.
-                    </p>
-                </div>
-                <div className={styles["image-container"]} data-aos="fade-up">
-                    <img src={MyFace} alt="My Portrait" className={styles["my-face"]} />
-                </div>
+            <div className={styles["text-container"]} data-aos="fade-up">
+                I am a final year computer science undergraduate at National University of Singapore (NUS).
+                I enjoy solving real world problems and software development, and seek to continously upskill by
+                doing internships, personal projects, taking on courses and reading extensively.
             </div>
             <div className={styles["tech-stack-container"]} data-aos="fade-up">
                 <h3>
-                    Here are the few technologies I have worked with recently
+                    Here are the few technologies I have worked with
                 </h3>
                 <div className={styles["tech-images-container"]}>
-                    <TechStack image={HtmlImg} label="HTML" />
-                    <TechStack image={CssImg} label="CSS" />
-                    <TechStack image={JavascriptImg} label="JavaScript" />
-                    <TechStack image={ReactImg} label="React" />
-                    <TechStack image={ExpressImg} label="Express" />
-                    <TechStack image={MongodbImg} label="Mongodb" />
-                    <TechStack image={ReactNativeImg} label="React Native" />
-                    <TechStack image={FirebaseImg} label="Firebase" />
-                    <TechStack image={JavaImg} label="Java" />
-                    <TechStack image={CIconImg} label="C" />
+                    {
+                        technologies.map((technology, index) => (
+                            <TechStack
+                                key={index}
+                                image={technology["image"]} 
+                                label={technology["label"]} 
+                            />
+                        ))
+                    }
                 </div>
             </div>
         </div>

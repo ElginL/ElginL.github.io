@@ -1,7 +1,7 @@
 import styles from '../styles/components/Footer.module.css';
 import telegramImg from '../assets/telegram.png';
 import linkedinImg from '../assets/linkedin.png';
-import githubImg from '../assets/github.svg';
+import githubImg from '../assets/TechLogos/github.svg';
 
 const Footer = () => {
     return (

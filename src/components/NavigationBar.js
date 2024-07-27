@@ -38,7 +38,7 @@ const NavigationBar = () => {
             <ul className={styles["container"]}>
                 {
                     links.map((link, index) => (
-                        <li>
+                        <li key={index}>
                             <Link
                                 to={link["to"]}
                                 className={styles["link"]}
