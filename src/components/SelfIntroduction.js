@@ -14,7 +14,7 @@ const SelfIntroduction = () => {
                         Aspiring Software Developer
                     </h3>
                     <p className={styles["text"]}>
-                        Final Year Computer Science
+                        Bachelor of Computing (Computer Science)
                     </p>
                     <p className={styles["text"]}>
                         National University Of Singapore
