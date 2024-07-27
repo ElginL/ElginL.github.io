@@ -1,6 +1,6 @@
 import styles from '../styles/components/SelfIntroduction.module.css';
 import portrait from '../assets/portrait.png';
-import { HashLink as Link } from 'react-router-hash-link';
+import DownArrow from './DownArrow';
 
 const SelfIntroduction = () => {
     return (
@@ -22,6 +22,7 @@ const SelfIntroduction = () => {
                 </div>
                 <img src={portrait} alt="Personal Portrait" className={styles["portrait"]} />
             </div>
+            <DownArrow />
         </div>
     )
 }
