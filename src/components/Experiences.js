@@ -1,17 +1,32 @@
+import React, { useState } from 'react';
 import styles from '../styles/components/Experiences.module.css';
 import "aos/dist/aos.css";
 import IlluminaImg from "../assets/Experiences/illumina.png";
 import TitansoftImg from "../assets/Experiences/titansoft.png";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Experiences = () => {
+    const [hoveredLink, setHoveredLink] = useState(null);
+
     return (
         <div id="experiences" className={styles["container"]}>
             <h1 className={styles["experiences-header"]} data-aos="fade-up">
                 Experience
             </h1>
             <div className={styles["company-list-container"]}>
-                <div className={styles["company-container"]}>
-                    <img className={styles["company-image"]} src={IlluminaImg} />
+                <Link 
+                    className={styles["company-container"]} 
+                    data-aos="fade-up"
+                    onMouseEnter={() => setHoveredLink(1)}
+                    onMouseLeave={() => setHoveredLink(null)}
+                    style={{
+                        color: hoveredLink !== null && hoveredLink !== 1 ? "grey" : "white"
+                    }} 
+                >
+                    <img 
+                        className={hoveredLink !== null && hoveredLink !== 1 ? styles["company-image-shaded"]: styles["company-image"]} 
+                        src={IlluminaImg} 
+                    />
                     <div className={styles["description-container"]}>
                         <h2>Software Development Intern</h2>
                         <p className={styles["experience-description"]}>
@@ -21,11 +36,20 @@ const Experiences = () => {
                             microservices, identity management, push notification system, CI/CD and software testing.
                         </p>
                     </div>
-                </div>
-            </div>
-            <div className={styles["company-list-container"]}>
-                <div className={styles["company-container"]}>
-                    <img className={styles["company-image"]} src={TitansoftImg} />
+                </Link>
+                <Link 
+                    className={styles["company-container"]} 
+                    data-aos="fade-up"
+                    onMouseEnter={() => setHoveredLink(2)}
+                    onMouseLeave={() => setHoveredLink(null)}
+                    style={{
+                        color: hoveredLink !== null && hoveredLink !== 2 ? "grey" : "white"
+                    }}
+                >
+                    <img 
+                        className={hoveredLink !== null && hoveredLink !== 2 ? styles["company-image-shaded"]: styles["company-image"]}  
+                        src={TitansoftImg} 
+                    />
                     <div className={styles["description-container"]}>
                         <h2>Software Developer Intern</h2>
                         <p className={styles["experience-description"]}>
@@ -34,7 +58,7 @@ const Experiences = () => {
                             remaining time fortifying the company's feature toggle website. 
                         </p>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     )

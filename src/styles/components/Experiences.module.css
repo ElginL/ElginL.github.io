@@ -14,20 +14,36 @@
     font-size: 3.5rem;
 }
 
+.company-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .company-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    text-decoration: none;
+    color: white;
 }
 
-.company-image {
+.company-image,
+.company-image-shaded {
     width: 170px;
     height: 140px;
     border-radius: 10px;
+    filter: brightness(100%);
+}
+
+.company-image-shaded {
+    filter: brightness(20%);
+    transition: filter 0.2s;
 }
 
 .description-container {
     max-width: 45%;
     font-size: 1.3rem;
+    transition: color 0.2s;
 }

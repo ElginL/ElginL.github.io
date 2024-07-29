@@ -46,7 +46,7 @@ const NavigationBar = () => {
                                 onMouseLeave={() => setHoveredLink(null)}  
                                 style={{
                                     color: linkColorHandler(index)
-                                }}  
+                                }}
                             >
                                 {link["description"]}
                             </Link>
