@@ -1,3 +1,7 @@
 .container {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.container > div {
+    padding-top: 20px;
+}

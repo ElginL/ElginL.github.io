@@ -5,6 +5,7 @@ import Landing from './pages/Landing';
 function App() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
+    window.addEventListener('load', Aos.refresh);
   }, []);
   
   return (
