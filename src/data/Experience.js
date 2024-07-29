@@ -3,6 +3,7 @@ import TitansoftImg from "../assets/Experiences/titansoft.png";
 
 export const experienceData = [
     {
+        linkToPage: "illumina",
         companyImage: IlluminaImg,
         jobTitle: "Software Development Intern",
         description: `During this 6 months internship, I had the opportunity to join a multinational

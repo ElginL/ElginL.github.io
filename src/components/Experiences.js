@@ -15,9 +15,10 @@ const Experiences = () => {
             <div className={styles["company-list-container"]}>
                 {
                     experienceData.map((data, index) => (
-                        <Link 
+                        <Link
                             key={index}
                             className={styles["company-container"]} 
+                            to={data["linkToPage"]}
                             data-aos="fade-up"
                             onMouseEnter={() => setHoveredLink(index)}
                             onMouseLeave={() => setHoveredLink(null)}
@@ -35,7 +36,7 @@ const Experiences = () => {
                                 </h2>
                                 <p className={styles["experience-description"]}>
                                     {data["description"]}
-                                </p>
+                                </p>      
                             </div>
                         </Link>
                     ))

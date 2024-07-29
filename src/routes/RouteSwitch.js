@@ -9,6 +9,7 @@ import CvMaker from '../pages/CvMaker';
 import Blog from '../pages/Blog';
 import Inventory from '../pages/Inventory';
 import ScrollToTop from './ScrollToTop';
+import IlluminaExperience from '../pages/IlluminaExperience';
 
 const RouteSwitch = () => {
     return (
@@ -24,6 +25,7 @@ const RouteSwitch = () => {
                 <Route path="/cvmaker" element={<CvMaker />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/inventory" element={<Inventory />} />
+                <Route path="/illumina" element={<IlluminaExperience />} />
             </Routes>
         </HashRouter>
     );
