@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    gap: 25px;
+    gap: 40px;
 }
 
 .projects-header {
@@ -20,6 +20,7 @@
 .filter-container {
     display: flex;
     gap: 10px;
+    font-size: 1.25rem;
 }
 
 .buttons-container {
@@ -35,7 +36,7 @@
     cursor: pointer;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
     transition: color 0.5s;
 }
 
