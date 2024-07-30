@@ -96,7 +96,7 @@ const inventory = {
     pathToDetailedPage: "/inventory"
 };
 
-export const portfolioData = [
+export const projectData = [
     splinkty,
     jeeqTracker,
     duke,

@@ -29,7 +29,7 @@ const NavigationBar = () => {
         { to: "/#self-introduction", description: "Home" },
         { to: "/#about-me", description: "About" },
         { to: "/#experiences", description: "Experiences"},
-        { to: "/#portfolio", description: "Projects" },
+        { to: "/#projects", description: "Projects" },
         { to: "/#contact", description: "Contact" }
     ]
 

@@ -1,0 +1,39 @@
+.project-container {
+    background-color: #232323;
+    text-decoration: none;
+    color: white;
+}
+
+.project-container:hover .project-image {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.project-container:hover .go-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.go-arrow {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.project-image {
+    width: 500px;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.bottom-container {
+    padding: 0 15px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

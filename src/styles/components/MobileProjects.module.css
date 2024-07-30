@@ -1,0 +1,28 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    transition: font-size 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.tech-stack {
+    font-style: italic;
+}
+
+.project-image {
+    width: 300px;
+}
+
+.go-to-project-container {
+    position: relative;
+    color: orange;
+    opacity: 0;
+    transition: opacity 1s;
+}
