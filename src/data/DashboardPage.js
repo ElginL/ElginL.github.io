@@ -1,23 +1,25 @@
-import HomeImg from '../assets/dashboard.jpg';
+// TODO: delete
 
-// The order matters!
-const windowImages = [ HomeImg ];
+// import HomeImg from '../assets/dashboard.jpg';
 
-const workTitle = "Project Dashboard";
+// // The order matters!
+// const windowImages = [ HomeImg ];
 
-const description = `
-    A project dashboard page that showcases my earlier mini web projects, be sure to head there!
-`;
+// const workTitle = "Project Dashboard";
 
-const learningPoints = [
-    "CSS Grids to layout components properly",
-    "Proper structuring of HTML code for CSS styling",
-    "CSS Flexbox"
-];
+// const description = `
+//     A project dashboard page that showcases my earlier mini web projects, be sure to head there!
+// `;
 
-export const dashboardDetails = {
-    workTitle,
-    description,
-    learningPoints,
-    windowImages
-};
+// const learningPoints = [
+//     "CSS Grids to layout components properly",
+//     "Proper structuring of HTML code for CSS styling",
+//     "CSS Flexbox"
+// ];
+
+// export const dashboardDetails = {
+//     workTitle,
+//     description,
+//     learningPoints,
+//     windowImages
+// };

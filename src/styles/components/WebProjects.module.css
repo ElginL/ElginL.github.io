@@ -1,7 +1,15 @@
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .project-container {
     background-color: #232323;
     text-decoration: none;
     color: white;
+    border-radius: 6px;
 }
 
 .project-container:hover .project-image {
@@ -22,6 +30,8 @@
 
 .project-image {
     width: 500px;
+    height: 285px;
+    border-radius: 6px;
 }
 
 .image-container {

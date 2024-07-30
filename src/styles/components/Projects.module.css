@@ -40,5 +40,5 @@
 }
 
 .buttons-container > button:hover {
-    color: #54d8ef;
+    color: #54d8ef !important;
 }
