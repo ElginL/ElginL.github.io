@@ -23,7 +23,7 @@ const IlluminaExperience = () => {
                     Software Development Intern @ Illumina
                 </h2>
                 <p className={styles["description"]}>
-                    Through the six months period, I managed to pick up novel technologies and concepts
+                    Through the six months period (8 Jan 2024 - 28 Jun 2024), I managed to pick up novel technologies and concepts
                     that has expanded my view of Software Development. The following sections briefly describe
                     my takeaways from the internship.
                 </p>

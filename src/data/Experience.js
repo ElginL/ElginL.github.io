@@ -12,6 +12,7 @@ export const experienceData = [
                         microservices, identity management, push notification system, CI/CD and software testing.`
     },
     {
+        linkToPage: "titansoft",
         companyImage: TitansoftImg,
         jobTitle: "Software Developer Intern",
         description: `During this 3 months internship, I collaborated with three other interns and two mentors to build a greenfield cache service 
