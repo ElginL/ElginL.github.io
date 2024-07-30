@@ -12,12 +12,12 @@
 .project-container:hover .go-arrow {
     opacity: 1;
     transform: translateX(0);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 .go-arrow {
     opacity: 0;
     transform: translateX(-20px);
-    transition: opacity 0.5s, transform 0.5s;
 }
 
 .project-image {
