@@ -12,21 +12,25 @@ export const projectDetails = [
         description: "Frontend project"
     },
     {
+        url: "/inventory",
         displayImage: InventoryImg,
         title: "Farmer's Inventory",
         description: "Fullstack project"
     },
     {
+        url: "/blog",
         displayImage: BlogImg,
         title: "Blog",
         description: "Fullstack project"
     },
     {
+        url: "/shoppingcart",
         displayImage: ShoppingImg,
-        title: "ShoppingCard",
+        title: "Shopping Cart",
         description: "Frontend project"
     },
     {
+        url: "/cvmaker",
         displayImage: CvImg,
         title: "CV Creator",
         description: "Frontend project"

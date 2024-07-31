@@ -4,8 +4,8 @@ import NavigationBar from '../components/NavigationBar';
 import HtmlImage from '../assets/TechLogos/html.svg';
 import CssImage from '../assets/TechLogos/css.svg';
 import JavasriptImage from '../assets/TechLogos/javascript.svg';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import GithubImg from '../assets/TechLogos/github.svg';
+import OpenProjectButton from '../components/OpenProjectButton';
 
 const Dashboard = () => {
     return (
@@ -41,19 +41,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div>
-                    <a href="https://elginl.github.io/odin-dashboard/" className={styles["link-to-project"]} target="_blank">
-                        <p>
-                            <strong>Open project</strong>
-                        </p>
-                        <div className={styles["arrow-container"]}>
-                            <ArrowRightAltIcon 
-                                className={styles["first-right-arrow"]}
-                            />
-                            <ArrowRightAltIcon 
-                                className={styles["second-right-arrow"]}
-                            />
-                        </div>
-                    </a>
+                    <OpenProjectButton url="https://elginl.github.io/odin-dashboard/" />
                     <a href="https://github.com/ElginL/odin-dashboard" className={styles["link-to-project"]} target="_blank">
                         <p>
                             <strong>Github Repository</strong>

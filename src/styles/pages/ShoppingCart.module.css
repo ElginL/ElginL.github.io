@@ -29,38 +29,14 @@
     font-size: 2.25rem;
 }
 
+.link-to-project:hover {
+    color: #54d8ef;
+}
+
 .link-to-project {
     color: white;
     display: flex;
     align-items: center;
     gap: 10px;
     transition: color 0.5s;
-}
-
-.arrow-container {
-    overflow: hidden;
-    width: 29px;
-    height: 29px;
-    display: flex;
-    align-items: center;  
-    gap: 5px;
-}
-
-.link-to-project:hover {
-    color: #54d8ef;
-}
-
-.first-right-arrow,
-.second-right-arrow {
-    transform: scale(1.5) translateX(-16px);
-}
-
-.link-to-project:hover .first-right-arrow {
-    transform: scale(1.5) translateX(3.5px);
-    transition: transform 0.5s;
-}
-
-.link-to-project:hover .second-right-arrow {
-    transform: scale(1.5) translateX(5px);
-    transition: transform 0.5s;
 }
