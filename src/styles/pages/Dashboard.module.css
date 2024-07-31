@@ -1,0 +1,89 @@
+.content-container {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 8% 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 25px;
+}
+
+.content-container > p {
+    margin: 0;
+}
+
+.technologies {
+    display: flex;
+    gap: 15px;
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 2.25rem;
+}
+
+.link-to-project {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.5s;
+}
+
+.arrow-container {
+    overflow: hidden;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    align-items: center;  
+    gap: 5px;
+}
+
+.link-to-project:hover {
+    color: #54d8ef;
+}
+
+.first-right-arrow,
+.second-right-arrow {
+    transform: scale(1.5) translateX(-16px);
+}
+
+.link-to-project:hover .first-right-arrow {
+    transform: scale(1.5) translateX(3.5px);
+    transition: transform 0.5s;
+}
+
+.link-to-project:hover .second-right-arrow {
+    transform: scale(1.5) translateX(5px);
+    transition: transform 0.5s;
+}
+
+/*
+.second-right-arrow {
+    opacity: 0;
+}
+
+.link-to-project:hover,
+.link-to-project:hover .right-arrow
+.link-to-project:hover .second-right-arrow {
+    color: #54d8ef;
+}
+
+.link-to-project:hover .right-arrow {
+    transform: translateX(20px) scale(1.5);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+.link-to-project:hover .second-right-arrow {
+    opacity: 1;
+    transform: translateX(20px) scale(1.5);
+    transition: transform 1s, opacity 1s;
+} */

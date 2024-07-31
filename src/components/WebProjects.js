@@ -8,7 +8,7 @@ const WebProjects = () => {
         <div className={styles["container"]}>
             {
                 projectDetails.map((projectDetail, index) => (
-                    <Link key={index}>
+                    <Link key={index} to={projectDetail["url"]}>
                         <div className={styles["project-container"]}>
                             <div className={styles["image-container"]}>
                                 <img className={styles["project-image"]} src={projectDetail["displayImage"]} alt={projectDetail["title"]} />

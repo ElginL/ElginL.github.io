@@ -6,6 +6,7 @@ import DashboardImg from '../assets/dashboard.jpg';
 
 export const projectDetails = [
     {
+        url: "/dashboard",
         displayImage: DashboardImg,
         title: "Dashboard",
         description: "Frontend project"
