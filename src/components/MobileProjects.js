@@ -13,6 +13,7 @@ const MobileProjects = () => {
                 className={styles["project-container"]}
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
+                to="/splinkty"
             >
                 <div>
                     <h2>
