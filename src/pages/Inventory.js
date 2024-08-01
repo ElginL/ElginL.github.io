@@ -12,6 +12,7 @@ import { responsive } from "../data/CarouselResponsiveSettings";
 import InventoryImg from "../assets/InventoryImages/inventory.png";
 import CategoriesImg from "../assets/InventoryImages/categories.png";
 import EditImg from "../assets/InventoryImages/edit.png";
+import NodeJsImg from "../assets/TechLogos/nodejs.svg";
 
 const Inventory = () => {
     return (
@@ -32,12 +33,16 @@ const Inventory = () => {
                     </h2>
                     <div className={styles["technologies"]}>
                         <div className={styles["tech-container"]}>
-                            <img src={PugImg} alt="react" />
+                            <img src={PugImg} alt="pug" />
                             <p>Pug</p>
                         </div>
                         <div className={styles["tech-container"]}>
                             <img src={ExpressImg} alt="express" />
                             <p>Express</p>
+                        </div>
+                        <div className={styles["tech-container"]}>
+                            <img src={NodeJsImg} alt="nodejs" />
+                            <p>NodeJS</p>
                         </div>
                         <div className={styles["tech-container"]}>
                             <img src={MongoDbImg} alt="MongoDB" />

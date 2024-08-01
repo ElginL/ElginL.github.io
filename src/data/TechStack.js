@@ -22,6 +22,7 @@ import RabbitMqImg from '../assets/TechLogos/rabbitmq.svg';
 import OpenTelemetryImg from '../assets/TechLogos/OpenTelemetry.svg';
 import GrafanaImg from '../assets/TechLogos/Grafana.svg';
 import PythonImg from '../assets/TechLogos/Python.svg';
+import NodeJsImg from '../assets/TechLogos/nodejs.svg';
 
 export const technologies = [
     { image: HtmlImg, label: "HTML" },
@@ -29,6 +30,7 @@ export const technologies = [
     { image: JavascriptImg, label: "JavaScript" },
     { image: ReactImg, label: "React" },
     { image: ExpressImg, label: "Express" },
+    { image: NodeJsImg, label: "NodeJS" },
     { image: MongodbImg, label: "MongoDB" },
     { image: PostgresqlImg, label: "Postgresql" },
     { image: WebsocketImg, label: "Socket.io" },
