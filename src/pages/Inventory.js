@@ -6,15 +6,16 @@ import ExpressImg from "../assets/TechLogos/express.svg";
 import MongoDbImg from "../assets/TechLogos/mongodb.svg";
 import CssImg from "../assets/TechLogos/css.svg";
 import GithubImg from "../assets/TechLogos/github.svg";
-import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
-import { responsive } from "../data/CarouselResponsiveSettings";
 import InventoryImg from "../assets/InventoryImages/inventory.png";
 import CategoriesImg from "../assets/InventoryImages/categories.png";
 import EditImg from "../assets/InventoryImages/edit.png";
 import NodeJsImg from "../assets/TechLogos/nodejs.svg";
+import ProjectCarousel from "../components/ProjectCarousel";
 
 const Inventory = () => {
+    const carouselImages = [InventoryImg, CategoriesImg, EditImg];
+    
     return (
         <div>
             <NavigationBar />
@@ -54,41 +55,7 @@ const Inventory = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{paddingBottom: '30px', position: 'relative'}}>
-                    <Carousel
-                        additionalTransfrom={0}
-                        arrows
-                        autoPlay={true}
-                        autoPlaySpeed={5000}
-                        centerMode={false}
-                        className=""
-                        containerClass="container"
-                        dotListClass=""
-                        draggable
-                        focusOnSelect={false}
-                        infinite
-                        itemClass=""
-                        keyBoardControl
-                        minimumTouchDrag={80}
-                        pauseOnHover
-                        renderArrowsWhenDisabled={false}
-                        renderButtonGroupOutside={false}
-                        renderDotsOutside
-                        rewind={false}
-                        rewindWithAnimation={false}
-                        rtl={false}
-                        shouldResetAutoplay
-                        showDots
-                        sliderClass=""
-                        slidesToSlide={1}
-                        swipeable
-                        responsive={responsive}
-                    >
-                        <img src={InventoryImg} className={styles["carousel-image"]} />
-                        <img src={CategoriesImg} className={styles["carousel-image"]} />
-                        <img src={EditImg} className={styles["carousel-image"]} />
-                    </Carousel>
-                </div>
+                <ProjectCarousel images={carouselImages} />
                 <div>
                     <a href="https://github.com/ElginL/odin-inventory" className={styles["link-to-project"]} target="_blank">
                         <p>
