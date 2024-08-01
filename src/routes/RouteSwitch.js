@@ -5,7 +5,6 @@ import JeeqTracker from '../pages/JeeqTracker';
 import Duke from '../pages/Duke';
 import ShoppingCart from '../pages/ShoppingCart';
 import Dashboard from '../pages/Dashboard';
-import CvMaker from '../pages/CvMaker';
 import Blog from '../pages/Blog';
 import Inventory from '../pages/Inventory';
 import ScrollToTop from './ScrollToTop';
@@ -23,7 +22,6 @@ const RouteSwitch = () => {
                 <Route path="/duke" element={<Duke />} />
                 <Route path="/shoppingcart" element={<ShoppingCart />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/cvmaker" element={<CvMaker />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/inventory" element={<Inventory />} />
                 <Route path="/illumina" element={<IlluminaExperience />} />
