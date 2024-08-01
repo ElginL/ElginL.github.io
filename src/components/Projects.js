@@ -38,13 +38,15 @@ const Projects = () => {
                     </button>
                 </div>
             </div>
-            {
-                selectedFilter == 'web'
-                    ? <WebProjects />
-                    : selectedFilter == 'mobile'
-                    ? <MobileProjects />
-                    : <DesktopProjects />
-            }
+            <div data-aos="fade-up">
+                {
+                    selectedFilter == 'web'
+                        ? <WebProjects />
+                        : selectedFilter == 'mobile'
+                        ? <MobileProjects />
+                        : <DesktopProjects />
+                }
+            </div>
         </div>
     )
 }
