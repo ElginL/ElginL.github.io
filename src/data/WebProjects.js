@@ -2,8 +2,15 @@ import InventoryImg from '../assets/InventoryImages/inventory.png';
 import BlogImg from '../assets/BlogImages/blog.png';
 import ShoppingImg from '../assets/ShoppingCartImages/shop.png';
 import DashboardImg from '../assets/dashboard.jpg';
+import PeerPrepImg from '../assets/PeerPrepImages/room.png';
 
 export const projectDetails = [
+    {
+        url: "/peerprep",
+        displayImage: PeerPrepImg,
+        title: "PeerPrep ⭐",
+        description: "Fullstack project"
+    },
     {
         url: "/dashboard",
         displayImage: DashboardImg,

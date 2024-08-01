@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import styles from '../styles/components/ProjectCarousel.module.css';
 
-const ProjectCarousel = ({ images, carouselWidth }) => {
+const ProjectCarousel = ({ images, carouselWidth, carouselImageHeight }) => {
     const responsive = {
         superLargeDesktop: {
           breakpoint: { max: 4000, min: 3000 },
@@ -22,7 +22,7 @@ const ProjectCarousel = ({ images, carouselWidth }) => {
     };
 
     return (
-        <div style={{ paddingBottom: '30px', position: 'relative', width: carouselWidth  }}>
+        <div style={{ paddingBottom: '30px', position: 'relative', width: carouselWidth }}>
             <Carousel
                 additionalTransfrom={0}
                 arrows
@@ -59,6 +59,7 @@ const ProjectCarousel = ({ images, carouselWidth }) => {
                             src={image} 
                             className={styles["carousel-image"]}
                             alt="carousel" 
+                            style={{ height: carouselImageHeight }}
                         />
                     ))
                 }

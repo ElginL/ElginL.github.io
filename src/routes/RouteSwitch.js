@@ -10,6 +10,7 @@ import Inventory from '../pages/Inventory';
 import ScrollToTop from './ScrollToTop';
 import IlluminaExperience from '../pages/IlluminaExperience';
 import TitansoftExperience from '../pages/TitansoftExperience';
+import PeerPrep from '../pages/PeerPrep';
 
 const RouteSwitch = () => {
     return (
@@ -26,6 +27,7 @@ const RouteSwitch = () => {
                 <Route path="/inventory" element={<Inventory />} />
                 <Route path="/illumina" element={<IlluminaExperience />} />
                 <Route path="/titansoft" element={<TitansoftExperience />} />
+                <Route path="/peerprep" element={<PeerPrep />} />
             </Routes>
         </HashRouter>
     );
