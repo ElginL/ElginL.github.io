@@ -29,6 +29,10 @@
     font-size: 2.25rem;
 }
 
+.link-to-project:hover {
+    color: #54d8ef;
+}
+
 .link-to-project {
     color: white;
     display: flex;
@@ -37,6 +41,7 @@
     transition: color 0.5s;
 }
 
-.link-to-project:hover {
-    color: #54d8ef;
+.carousel-image {
+    width: 100%;
+    height: 100%;
 }
