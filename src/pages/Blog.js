@@ -14,6 +14,7 @@ import BlogDetails from '../assets/BlogImages/view.jpg';
 import GithubImg from '../assets/TechLogos/github.svg';
 import NodeJsImg from "../assets/TechLogos/nodejs.svg";
 import ProjectCarousel from "../components/ProjectCarousel";
+import LinkToGithub from '../components/LinkToGithub';
 
 const Blog = () => {
     const carouselImages = [ViewBlog, BlogDetails, BlogComments, EditHome, BlogLogin, BlogEdit];
@@ -58,14 +59,7 @@ const Blog = () => {
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} />
-                <div>
-                    <a href="https://github.com/ElginL/odin-blog-api" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
-                </div>
+                <LinkToGithub url="https://github.com/ElginL/odin-blog-api" />
             </div>
         </div>
     );

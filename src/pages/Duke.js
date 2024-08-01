@@ -12,7 +12,7 @@ import MarkImage from "../assets/DukeImages/mark.jpg";
 import UnmarkImage from "../assets/DukeImages/unmark.jpg";
 import LoanbookAddImage from "../assets/DukeImages/loanbookAdd.jpg";
 import LoanbookListImage from "../assets/DukeImages/loanbookList.jpg";
-import GithubImg from "../assets/TechLogos/github.svg";
+import LinkToGithub from "../components/LinkToGithub";
 
 const Duke = () => {
     const carouselImages = [
@@ -51,14 +51,7 @@ const Duke = () => {
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} carouselWidth="300px" />
-                <div>
-                    <a href="https://github.com/ElginL/ip" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
-                </div>
+                <LinkToGithub url="https://github.com/ElginL/ip" />
             </div>
         </div>
     );

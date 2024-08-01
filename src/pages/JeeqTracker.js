@@ -7,8 +7,7 @@ import HomeImage from "../assets/JeeqTrackerImages/home.jpg";
 import ViewImage from "../assets/JeeqTrackerImages/view.jpg";
 import BuyImage from "../assets/JeeqTrackerImages/buy.jpg";
 import RemarkImage from "../assets/JeeqTrackerImages/remark.jpg";
-import GithubImg from "../assets/TechLogos/github.svg";
-
+import LinkToGithub from "../components/LinkToGithub";
 
 const JeeqTracker = () => {
     const carouselImages = [
@@ -42,14 +41,7 @@ const JeeqTracker = () => {
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} />
-                <div>
-                    <a href="https://github.com/ElginL/tp" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
-                </div>
+                <LinkToGithub url="https://github.com/ElginL/tp" />
             </div>
         </div>
     );

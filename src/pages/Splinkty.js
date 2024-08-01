@@ -15,6 +15,7 @@ import SplitMembersImg from '../assets/SplinktyImages/SplitMembers.jpg';
 import SplitSummaryImg from '../assets/SplinktyImages/SplitSummary.jpg';
 import ProjectCarousel from "../components/ProjectCarousel";
 import GithubImg from '../assets/TechLogos/github.svg';
+import LinkToGithub from '../components/LinkToGithub';
 
 const Splinkty = () => {
     const carouselImages = [
@@ -57,14 +58,7 @@ const Splinkty = () => {
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} carouselWidth="300px" />
-                <div>
-                    <a href="https://github.com/ElginL/orbital-splinkty" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
-                </div>
+                <LinkToGithub url="https://github.com/ElginL/orbital-splinkty" />
             </div>
         </div>
     );

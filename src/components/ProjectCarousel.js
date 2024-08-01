@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import styles from '../styles/components/ProjectCarousel.module.css';
+import 'react-multi-carousel/lib/styles.css';
 
 const ProjectCarousel = ({ images, carouselWidth, carouselImageHeight }) => {
     const responsive = {

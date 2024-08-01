@@ -28,15 +28,3 @@
 .project-title {
     font-size: 2.25rem;
 }
-
-.link-to-project {
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: color 0.5s;
-}
-
-.link-to-project:hover {
-    color: #54d8ef;
-}

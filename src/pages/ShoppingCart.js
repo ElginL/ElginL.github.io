@@ -3,8 +3,8 @@ import BackButton from '../components/BackButton';
 import styles from '../styles/pages/ShoppingCart.module.css';
 import ReactImg from '../assets/TechLogos/react.svg';
 import CssImg from '../assets/TechLogos/css.svg';
-import GithubImg from '../assets/TechLogos/github.svg';
 import OpenProjectButton from '../components/OpenProjectButton';
+import LinkToGithub from '../components/LinkToGithub';
 
 const ShoppingCart = () => {
     return (
@@ -35,12 +35,7 @@ const ShoppingCart = () => {
                 </div>
                 <div>
                     <OpenProjectButton url="https://elginl.github.io/odin-shopping-cart/" />
-                    <a href="https://github.com/ElginL/odin-shopping-cart" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
+                    <LinkToGithub url="https://github.com/ElginL/odin-shopping-cart" />
                 </div>
             </div>
         </div>

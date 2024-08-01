@@ -2,7 +2,6 @@ import styles from '../styles/pages/PeerPrep.module.css';
 import NavigationBar from '../components/NavigationBar';
 import BackButton from '../components/BackButton';
 import ProjectCarousel from '../components/ProjectCarousel';
-import GithubImg from '../assets/TechLogos/github.svg';
 import ReactImg from '../assets/TechLogos/react.svg';
 import MongodbImg from '../assets/TechLogos/mongodb.svg';
 import NodeJsImg from '../assets/TechLogos/nodejs.svg';
@@ -20,6 +19,7 @@ import MatchingImg from '../assets/PeerPrepImages/matching.png'
 import RoomImg from '../assets/PeerPrepImages/room.png'
 import CodeExecutionImg from '../assets/PeerPrepImages/code-execution.png'
 import HistoryImg from '../assets/PeerPrepImages/history.png'
+import LinkToGithub from '../components/LinkToGithub';
 
 const PeerPrep = () => {
     const carouselImages = [
@@ -97,14 +97,7 @@ const PeerPrep = () => {
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} carouselImageHeight="450px"  />
-                <div>
-                    <a href="https://github.com/ElginL/PeerPrep" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
-                </div>
+                <LinkToGithub url="https://github.com/ElginL/PeerPrep" />
             </div>
         </div>
     )

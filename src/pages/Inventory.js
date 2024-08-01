@@ -5,13 +5,12 @@ import PugImg from "../assets/TechLogos/pug.svg";
 import ExpressImg from "../assets/TechLogos/express.svg";
 import MongoDbImg from "../assets/TechLogos/mongodb.svg";
 import CssImg from "../assets/TechLogos/css.svg";
-import GithubImg from "../assets/TechLogos/github.svg";
-import 'react-multi-carousel/lib/styles.css';
 import InventoryImg from "../assets/InventoryImages/inventory.png";
 import CategoriesImg from "../assets/InventoryImages/categories.png";
 import EditImg from "../assets/InventoryImages/edit.png";
 import NodeJsImg from "../assets/TechLogos/nodejs.svg";
 import ProjectCarousel from "../components/ProjectCarousel";
+import LinkToGithub from "../components/LinkToGithub";
 
 const Inventory = () => {
     const carouselImages = [InventoryImg, CategoriesImg, EditImg];
@@ -56,14 +55,7 @@ const Inventory = () => {
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} />
-                <div>
-                    <a href="https://github.com/ElginL/odin-inventory" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
-                </div>
+                <LinkToGithub url="https://github.com/ElginL/odin-inventory" />
             </div>
         </div>
     );

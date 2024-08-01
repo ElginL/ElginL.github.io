@@ -4,8 +4,8 @@ import NavigationBar from '../components/NavigationBar';
 import HtmlImage from '../assets/TechLogos/html.svg';
 import CssImage from '../assets/TechLogos/css.svg';
 import JavasriptImage from '../assets/TechLogos/javascript.svg';
-import GithubImg from '../assets/TechLogos/github.svg';
 import OpenProjectButton from '../components/OpenProjectButton';
+import LinkToGithub from '../components/LinkToGithub';
 
 const Dashboard = () => {
     return (
@@ -42,12 +42,7 @@ const Dashboard = () => {
                 </div>
                 <div>
                     <OpenProjectButton url="https://elginl.github.io/odin-dashboard/" />
-                    <a href="https://github.com/ElginL/odin-dashboard" className={styles["link-to-project"]} target="_blank">
-                        <p>
-                            <strong>Github Repository</strong>
-                        </p>
-                        <img src={GithubImg} alt="github" />
-                    </a>
+                    <LinkToGithub url="https://github.com/ElginL/odin-dashboard" />
                 </div>
             </div>
         </div>
