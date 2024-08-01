@@ -11,13 +11,21 @@ import BlogEdit from '../assets/BlogImages/edit.png';
 import EditHome from '../assets/BlogImages/edithome.jpg';
 import BlogLogin from '../assets/BlogImages/login.jpg';
 import BlogDetails from '../assets/BlogImages/view.jpg';
-import GithubImg from '../assets/TechLogos/github.svg';
 import NodeJsImg from "../assets/TechLogos/nodejs.svg";
 import ProjectCarousel from "../components/ProjectCarousel";
 import LinkToGithub from '../components/LinkToGithub';
+import TechDisplay from '../components/TechDisplay';
 
 const Blog = () => {
     const carouselImages = [ViewBlog, BlogDetails, BlogComments, EditHome, BlogLogin, BlogEdit];
+
+    const techStack = [
+        { image: ReactImg, label: "React" },
+        { image: ExpressImg, label: "Express" },
+        { image: NodeJsImg, label: "NodeJS" },
+        { image: MongoDbImg, label: "MongoDB" },
+        { image: CssImg, label: "CSS" }
+    ];
 
     return (
         <div>
@@ -36,26 +44,15 @@ const Blog = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={ReactImg} alt="react" />
-                            <p>React</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={ExpressImg} alt="express" />
-                            <p>Express</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={NodeJsImg} alt="nodejs" />
-                            <p>NodeJS</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={MongoDbImg} alt="MongoDB" />
-                            <p>MongoDB</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={CssImg} alt="css" />
-                            <p>CSS</p>
-                        </div>
+                        {
+                            techStack.map((tech, index) => (
+                                <TechDisplay
+                                    key={index}
+                                    image={tech["image"]}
+                                    label={tech["label"]}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} />

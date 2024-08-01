@@ -13,6 +13,7 @@ import UnmarkImage from "../assets/DukeImages/unmark.jpg";
 import LoanbookAddImage from "../assets/DukeImages/loanbookAdd.jpg";
 import LoanbookListImage from "../assets/DukeImages/loanbookList.jpg";
 import LinkToGithub from "../components/LinkToGithub";
+import TechDisplay from "../components/TechDisplay";
 
 const Duke = () => {
     const carouselImages = [
@@ -44,10 +45,7 @@ const Duke = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={JavaImage} alt="java" />
-                            <p>Java</p>
-                        </div>
+                        <TechDisplay image={JavaImage} label="Java" />
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} carouselWidth="300px" />

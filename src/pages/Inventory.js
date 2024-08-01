@@ -11,10 +11,19 @@ import EditImg from "../assets/InventoryImages/edit.png";
 import NodeJsImg from "../assets/TechLogos/nodejs.svg";
 import ProjectCarousel from "../components/ProjectCarousel";
 import LinkToGithub from "../components/LinkToGithub";
+import TechDisplay from "../components/TechDisplay";
 
 const Inventory = () => {
     const carouselImages = [InventoryImg, CategoriesImg, EditImg];
     
+    const techStack = [
+        { image: PugImg, label: "Pug" },
+        { image: ExpressImg, label: "Express" },
+        { image: NodeJsImg, label: "NodeJS" },
+        { image: MongoDbImg, label: "MongoDB" },
+        { image: CssImg, label: "CSS" }
+    ]
+
     return (
         <div>
             <NavigationBar />
@@ -32,26 +41,15 @@ const Inventory = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={PugImg} alt="pug" />
-                            <p>Pug</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={ExpressImg} alt="express" />
-                            <p>Express</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={NodeJsImg} alt="nodejs" />
-                            <p>NodeJS</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={MongoDbImg} alt="MongoDB" />
-                            <p>MongoDB</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={CssImg} alt="css" />
-                            <p>CSS</p>
-                        </div>
+                        {
+                            techStack.map((tech, index) => (
+                                <TechDisplay
+                                    key={index}
+                                    image={tech["image"]}
+                                    label={tech["label"]}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} />

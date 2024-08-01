@@ -6,8 +6,15 @@ import CssImage from '../assets/TechLogos/css.svg';
 import JavasriptImage from '../assets/TechLogos/javascript.svg';
 import OpenProjectButton from '../components/OpenProjectButton';
 import LinkToGithub from '../components/LinkToGithub';
+import TechDisplay from '../components/TechDisplay';
 
 const Dashboard = () => {
+    const techStack = [
+        { image: HtmlImage, label: "HTML" },
+        { image: CssImage, label: "CSS" },
+        { image: JavasriptImage, label: "Javascript" }
+    ]
+
     return (
         <div>
             <NavigationBar />
@@ -26,18 +33,15 @@ const Dashboard = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={HtmlImage} />
-                            <p>HTML</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={CssImage} />
-                            <p>CSS</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={JavasriptImage} />
-                            <p>Javascript</p>
-                        </div>
+                        {
+                            techStack.map((tech, index) => (
+                                <TechDisplay
+                                    key={index}
+                                    image={tech["image"]}
+                                    label={tech["label"]}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
                 <div>

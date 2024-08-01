@@ -14,8 +14,8 @@ import ScanningResultsImg from '../assets/SplinktyImages/ScanningResults.jpg';
 import SplitMembersImg from '../assets/SplinktyImages/SplitMembers.jpg';
 import SplitSummaryImg from '../assets/SplinktyImages/SplitSummary.jpg';
 import ProjectCarousel from "../components/ProjectCarousel";
-import GithubImg from '../assets/TechLogos/github.svg';
 import LinkToGithub from '../components/LinkToGithub';
+import TechDisplay from '../components/TechDisplay';
 
 const Splinkty = () => {
     const carouselImages = [
@@ -30,6 +30,11 @@ const Splinkty = () => {
         FriendListImg,
         AddFriendImg
     ];
+
+    const techStack = [
+        { image: ReactNativeImg, label: "React Native" },
+        { image: FirebaseImg, label: "Firebase" }
+    ]
 
     return (
         <div>
@@ -47,14 +52,15 @@ const Splinkty = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={ReactNativeImg} alt="react native" />
-                            <p>React Native</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={FirebaseImg} alt="firebase" />
-                            <p>Firebase</p>
-                        </div>
+                        {
+                            techStack.map((tech, index) => (
+                                <TechDisplay
+                                    key={index}
+                                    image={tech["image"]}
+                                    label={tech["label"]}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} carouselWidth="300px" />

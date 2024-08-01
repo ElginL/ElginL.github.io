@@ -8,6 +8,7 @@ import ViewImage from "../assets/JeeqTrackerImages/view.jpg";
 import BuyImage from "../assets/JeeqTrackerImages/buy.jpg";
 import RemarkImage from "../assets/JeeqTrackerImages/remark.jpg";
 import LinkToGithub from "../components/LinkToGithub";
+import TechDisplay from "../components/TechDisplay";
 
 const JeeqTracker = () => {
     const carouselImages = [
@@ -34,10 +35,7 @@ const JeeqTracker = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={JavaImage} alt="java" />
-                            <p>Java</p>
-                        </div>
+                        <TechDisplay image={JavaImage} label="Java" />
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} />

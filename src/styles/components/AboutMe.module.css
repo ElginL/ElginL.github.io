@@ -43,12 +43,6 @@
     width: 70%;
 }
 
-.tech-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 @media (max-width: 1300px) {
     .text-container {
         width: 40vw;
@@ -58,11 +52,6 @@
 @media (max-width: 600px) {
     .about-header {
         font-size: 3rem;
-    }
-    
-    .my-face {
-        width: 150px;
-        height: 225px;
     }
 
     .content-container {

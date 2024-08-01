@@ -1,6 +1,7 @@
 import styles from '../styles/components/AboutMe.module.css';
 import "aos/dist/aos.css";
 import { technologies } from '../data/TechStack';
+import TechDisplay from './TechDisplay';
 
 const AboutMe = () => {
     return (
@@ -20,12 +21,11 @@ const AboutMe = () => {
                 <div className={styles["tech-images-container"]}>
                     {
                         technologies.map((technology, index) => (
-                            <div className={styles["tech-container"]} key={index}>
-                                <img src={technology["image"]} alt={technology["label"]} />
-                                <p>
-                                    {technology["label"]}
-                                </p>
-                            </div>
+                            <TechDisplay 
+                                key={index} 
+                                image={technology["image"]} 
+                                label={technology["label"]} 
+                            />
                         ))
                     }
                 </div>

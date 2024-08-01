@@ -20,6 +20,7 @@ import RoomImg from '../assets/PeerPrepImages/room.png'
 import CodeExecutionImg from '../assets/PeerPrepImages/code-execution.png'
 import HistoryImg from '../assets/PeerPrepImages/history.png'
 import LinkToGithub from '../components/LinkToGithub';
+import TechDisplay from '../components/TechDisplay';
 
 const PeerPrep = () => {
     const carouselImages = [
@@ -30,6 +31,20 @@ const PeerPrep = () => {
         CodeExecutionImg,
         HistoryImg
     ];
+
+    const techStack = [
+        { image: ReactImg, label: "React" },
+        { image: ExpressImg, label: "Express" },
+        { image: NodeJsImg, label: "NodeJS" },
+        { image: MongodbImg, label: "MongoDB" },
+        { image: PostgresqlImg, label: "Postgresql" },
+        { image: WebsocketImg, label: "Websocket" },
+        { image: DockerImg, label: "Docker" },
+        { image: KubernetesImg, label: "Kubernetes" },
+        { image: DigitalOceanImg, label: "Digital Ocean" },
+        { image: GithubActionsImg, label: "Github Actions" },
+        { image: Judge0Img, label: "Judge0" }
+    ]
 
     return (
         <div>
@@ -50,50 +65,15 @@ const PeerPrep = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={ReactImg} alt="react" />
-                            <p>React</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={ExpressImg} alt="express" />
-                            <p>Express</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={NodeJsImg} alt="nodejs" />
-                            <p>NodeJS</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={MongodbImg} alt="MongoDB" />
-                            <p>MongoDB</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={PostgresqlImg} alt="postgresql" />
-                            <p>Postgresql</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={WebsocketImg} alt="websocket" />
-                            <p>Websocket</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={DockerImg} alt="docker" />
-                            <p>Docker</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={KubernetesImg} alt="kubernetes" />
-                            <p>Kubernetes</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={DigitalOceanImg} alt="digital ocean" />
-                            <p>Digital Ocean</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={GithubActionsImg} alt="github actions" />
-                            <p>Github Actions</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={Judge0Img} alt="judge0" style={{ width: '70px', height: '70px' }} />
-                            <p>Judge0</p>
-                        </div>
+                        {
+                            techStack.map((tech, index) => (
+                                <TechDisplay
+                                    key={index}
+                                    image={tech["image"]}
+                                    label={tech["label"]}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
                 <ProjectCarousel images={carouselImages} carouselImageHeight="450px"  />

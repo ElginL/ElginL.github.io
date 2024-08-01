@@ -5,8 +5,14 @@ import ReactImg from '../assets/TechLogos/react.svg';
 import CssImg from '../assets/TechLogos/css.svg';
 import OpenProjectButton from '../components/OpenProjectButton';
 import LinkToGithub from '../components/LinkToGithub';
+import TechDisplay from '../components/TechDisplay';
 
 const ShoppingCart = () => {
+    const techStack = [
+        { image: ReactImg, label: "React" },
+        { image: CssImg, label: "CSS" }
+    ]
+
     return (
         <div>
             <NavigationBar />
@@ -23,14 +29,15 @@ const ShoppingCart = () => {
                         Tech stack
                     </h2>
                     <div className={styles["technologies"]}>
-                        <div className={styles["tech-container"]}>
-                            <img src={ReactImg} alt="react" />
-                            <p>React</p>
-                        </div>
-                        <div className={styles["tech-container"]}>
-                            <img src={CssImg} alt="css" />
-                            <p>CSS</p>
-                        </div>
+                        {
+                            techStack.map((tech, index) => (
+                                <TechDisplay
+                                    key={index}
+                                    image={tech["image"]}
+                                    label={tech["label"]}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
                 <div>
