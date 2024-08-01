@@ -57,7 +57,7 @@ const Inventory = () => {
                 </div>
                 <ProjectCarousel images={carouselImages} />
                 <div>
-                    <a href="https://github.com/ElginL/odin-inventory" className={styles["link-to-project"]} target="_blank">
+                    <a href="https://github.com/ElginL/odin-inventory" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
                         <p>
                             <strong>Github Repository</strong>
                         </p>

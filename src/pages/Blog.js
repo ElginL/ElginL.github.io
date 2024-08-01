@@ -59,7 +59,7 @@ const Blog = () => {
                 </div>
                 <ProjectCarousel images={carouselImages} />
                 <div>
-                    <a href="https://github.com/ElginL/odin-blog-api" className={styles["link-to-project"]} target="_blank">
+                    <a href="https://github.com/ElginL/odin-blog-api" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
                         <p>
                             <strong>Github Repository</strong>
                         </p>

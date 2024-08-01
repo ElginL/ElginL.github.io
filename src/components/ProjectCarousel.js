@@ -57,7 +57,8 @@ const ProjectCarousel = ({ images, carouselWidth }) => {
                         <img 
                             key={index}
                             src={image} 
-                            className={styles["carousel-image"]} 
+                            className={styles["carousel-image"]}
+                            alt="carousel" 
                         />
                     ))
                 }

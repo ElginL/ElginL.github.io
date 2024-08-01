@@ -30,7 +30,7 @@ const MobileProjects = () => {
                         <GoToArrow />
                     </div>
                 </div>
-                <img src={SplinktyImg} className={styles["project-image"]} />
+                <img src={SplinktyImg} className={styles["project-image"]} alt="splinkty" />
             </Link>
         </div>
     );

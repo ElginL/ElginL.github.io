@@ -35,7 +35,7 @@ const ShoppingCart = () => {
                 </div>
                 <div>
                     <OpenProjectButton url="https://elginl.github.io/odin-shopping-cart/" />
-                    <a href="https://github.com/ElginL/odin-shopping-cart" className={styles["link-to-project"]} target="_blank">
+                    <a href="https://github.com/ElginL/odin-shopping-cart" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
                         <p>
                             <strong>Github Repository</strong>
                         </p>
