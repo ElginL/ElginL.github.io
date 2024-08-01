@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container {
+    background-color: #232323;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+}
+
+.project-container:hover .project-image {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.project-container:hover .go-arrow {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.go-arrow {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.project-image {
+    width: 500px;
+    height: 285px;
+}
+
+.duke-image {
+    width: 250px;
+    height: 285px;
+}
+
+.image-container {
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.bottom-container {
+    padding: 0 15px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,18 +1,58 @@
-// import DetailedWork from '../components/DetailedWork';
-// import { jeeqtrackerDetails as details } from '../data/JeeqTrackerPage';
+import styles from "../styles/pages/JeeqTracker.module.css";
+import NavigationBar from "../components/NavigationBar";
+import BackButton from "../components/BackButton";
+import ProjectCarousel from "../components/ProjectCarousel";
+import JavaImage from "../assets/TechLogos/java.svg";
+import HomeImage from "../assets/JeeqTrackerImages/home.jpg";
+import ViewImage from "../assets/JeeqTrackerImages/view.jpg";
+import BuyImage from "../assets/JeeqTrackerImages/buy.jpg";
+import RemarkImage from "../assets/JeeqTrackerImages/remark.jpg";
+import GithubImg from "../assets/TechLogos/github.svg";
 
-// const JeeqTracker = () => {
-//     return (
-//         <DetailedWork
-//             workTitle={details.workTitle}
-//             windowImages={details.windowImages}
-//             siteLink={details.siteLink}
-//             codeLink={details.codeLink}
-//             description={details.description}
-//             learningPoints={details.learningPoints}
-//             isLargeDisplay={true}
-//         />
-//     );
-// };
 
-// export default JeeqTracker;
+const JeeqTracker = () => {
+    const carouselImages = [
+        HomeImage,
+        ViewImage,
+        BuyImage,
+        RemarkImage,
+    ];
+
+    return (
+        <div>
+            <NavigationBar />
+            <BackButton />
+            <div className={styles["content-container"]}>
+                <h2 className={styles["project-title"]}>
+                    JeeqTracker
+                </h2>
+                <p>
+                    JeeqTracker is a desktop application for home based business owners to keep track of transactions, built with Java and JavaFX.
+                    It is done is a group of 5, following OOP principles and high test coverage.
+                </p>
+                <div>
+                    <h2>
+                        Tech stack
+                    </h2>
+                    <div className={styles["technologies"]}>
+                        <div className={styles["tech-container"]}>
+                            <img src={JavaImage} alt="java" />
+                            <p>Java</p>
+                        </div>
+                    </div>
+                </div>
+                <ProjectCarousel images={carouselImages} />
+                <div>
+                    <a href="https://github.com/ElginL/tp" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
+                        <p>
+                            <strong>Github Repository</strong>
+                        </p>
+                        <img src={GithubImg} alt="github" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default JeeqTracker;

@@ -56,7 +56,7 @@ const Splinkty = () => {
                         </div>
                     </div>
                 </div>
-                <ProjectCarousel images={carouselImages} carouselWidth="31%" />
+                <ProjectCarousel images={carouselImages} carouselWidth="300px" />
                 <div>
                     <a href="https://github.com/ElginL/orbital-splinkty" className={styles["link-to-project"]} target="_blank" rel="noreferrer">
                         <p>

@@ -3,6 +3,7 @@ import styles from '../styles/components/Projects.module.css';
 import "aos/dist/aos.css";
 import MobileProjects from '../components/MobileProjects';
 import WebProjects from '../components/WebProjects';
+import DesktopProjects from './DesktopProjects';
 
 const Projects = () => {
     const [selectedFilter, setSelectedFilter] = useState("web")
@@ -28,12 +29,21 @@ const Projects = () => {
                     >
                         Mobile
                     </button>
+                    <span> / </span>
+                    <button
+                        onClick={() => setSelectedFilter("desktop")}
+                        style={{ color: selectedFilter == "desktop" ? "#54d8ef" : 'white' }}
+                    >
+                        Desktop
+                    </button>
                 </div>
             </div>
             {
                 selectedFilter == 'web'
                     ? <WebProjects />
-                    : <MobileProjects />
+                    : selectedFilter == 'mobile'
+                    ? <MobileProjects />
+                    : <DesktopProjects />
             }
         </div>
     )
