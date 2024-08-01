@@ -1,5 +1,3 @@
-// import DetailedWork from '../components/DetailedWork';
-// import { blogDetails as details } from '../data/BlogPage';
 import Carousel from "react-multi-carousel";
 import NavigationBar from '../components/NavigationBar';
 import BackButton from '../components/BackButton';
