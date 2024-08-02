@@ -29,3 +29,9 @@
     transition: opacity 0.5s, transform 0.5s;
     user-select: none;
 }
+
+@media (max-width: 600px) {
+    .link-container {
+        left: 2%;
+    }
+}

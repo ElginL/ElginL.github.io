@@ -29,7 +29,7 @@ const TitansoftExperience = () => {
                         I worked with .NET for the project, and have written robust test cases with NUnit. Clean coding is practiced with numerous mentor code reviews,
                         utilizing generics and adhering to design patterns such as Factory pattern, and making use of dependency injection extensively.
                     </p>
-                    <img src={CSharpImg} alt="c sharp" />
+                    <img src={CSharpImg} alt="c sharp" className={styles["tech-image"]} />
                 </div>
                 <div>
                     <h3>
@@ -39,7 +39,7 @@ const TitansoftExperience = () => {
                         Redis is used as the cache for the database as it offers storing data in RAM, which allows for fast read and write operations to reduce latency
                         from fetching data.
                     </p>
-                    <img src={RedisImg} alt="redis" />
+                    <img src={RedisImg} alt="redis" className={styles["tech-image"]} />
                 </div>
                 <div>
                     <h3>
@@ -49,7 +49,7 @@ const TitansoftExperience = () => {
                         I learned about SQL Change Tracking and SQL Change Data Capture (CDC) that allows detecting any insert / update / delete operations done on
                         any row entry, which plays a part in cache synchronization.
                     </p>
-                    <img src={SqlImg} className={styles["img-white-background"]} alt="sql" />
+                    <img src={SqlImg} className={`${styles["tech-image"]} ${styles["img-white-background"]}`} alt="sql" />
                 </div>
                 <div>
                     <h3>
@@ -69,7 +69,7 @@ const TitansoftExperience = () => {
                     </p>
                     <div className={styles["images-container"]}>
                         <img src={KafkaImg} alt="kafka" />
-                        <img src={DebeziumImg} className={styles["img-white-background"]} alt="debezium" />
+                        <img src={DebeziumImg} className={`${styles["tech-image"]} ${styles["img-white-background"]}`} alt="debezium" />
                     </div>
                 </div>
                 <div>
