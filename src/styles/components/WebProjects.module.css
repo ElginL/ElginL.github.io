@@ -48,3 +48,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    .project-image {
+        width: 350px;
+        height: 250px;
+    }
+}

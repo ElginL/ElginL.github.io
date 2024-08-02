@@ -33,11 +33,6 @@
     height: 285px;
 }
 
-.duke-image {
-    width: 250px;
-    height: 285px;
-}
-
 .image-container {
     overflow: hidden;
     border-top-left-radius: 6px;
@@ -52,4 +47,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    .project-image {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+.duke-image {
+    width: 250px;
+    height: 285px;
 }

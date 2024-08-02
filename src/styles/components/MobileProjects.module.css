@@ -26,3 +26,13 @@
     opacity: 0;
     transition: opacity 0.5s;
 }
+
+@media (max-width: 600px) {
+    .projects-container {
+        padding: 0 20px;
+    }
+
+    .project-image {
+        width: 150px;
+    }
+}

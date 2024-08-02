@@ -43,3 +43,9 @@
 .buttons-container > button:hover {
     color: #54d8ef !important;
 }
+
+@media (max-width: 600px) {
+    .projects-header {
+        font-size: 2.25rem;
+    }
+}
