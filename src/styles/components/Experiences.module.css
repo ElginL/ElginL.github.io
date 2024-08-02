@@ -47,3 +47,32 @@
     font-size: 1.3rem;
     transition: color 0.2s;
 }
+
+@media (max-width: 600px) {
+    .company-container {
+        flex-direction: column;
+    }
+
+    .description-container {
+        max-width: 80%;
+    }
+
+    .experiences-header {
+        font-size: 2.25rem;
+    }
+
+    .job-title {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .company-image,
+    .company-image-shaded {
+        height: 100px;
+        width: 160px;
+    }
+
+    .experience-description {
+        font-size: 1rem;
+    }
+}

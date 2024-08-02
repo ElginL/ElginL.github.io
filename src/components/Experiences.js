@@ -32,7 +32,7 @@ const Experiences = () => {
                                 alt={data["jobTitle"]}
                             />
                             <div className={styles["description-container"]}>
-                                <h2>
+                                <h2 className={styles["job-title"]}>
                                     {data["jobTitle"]}
                                 </h2>
                                 <p className={styles["experience-description"]}>
