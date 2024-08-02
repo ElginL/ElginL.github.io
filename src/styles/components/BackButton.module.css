@@ -32,6 +32,6 @@
 
 @media (max-width: 600px) {
     .link-container {
-        left: 2%;
+        position: absolute;
     }
 }
