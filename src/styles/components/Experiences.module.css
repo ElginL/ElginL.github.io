@@ -49,6 +49,10 @@
 }
 
 @media (max-width: 600px) {
+    .container {
+        gap: 5vh;
+    }
+
     .company-container {
         flex-direction: column;
     }
