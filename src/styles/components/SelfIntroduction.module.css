@@ -54,37 +54,17 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 600px) {
     .content-container {
-        gap: 0vw;
+        flex-direction: column;
     }
-}
 
-@media (max-width: 990px) {
     .portrait {
-        width: 200px;
+        width: 300px;
     }
 
     .name {
-        font-size: 4rem;
-    }
-
-    .role {
-        font-size: 2rem;
-    }
-
-    .text {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 550px) {
-    .portrait {
-        width: 150px;
-    }
-
-    .name {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .role {
@@ -92,6 +72,6 @@
     }
 
     .text {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 }

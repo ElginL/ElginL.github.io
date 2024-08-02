@@ -63,4 +63,8 @@
     .text-container {
         font-size: 1rem;
     }
+
+    .tech-images-container {
+        width: 95%;
+    }
 }
