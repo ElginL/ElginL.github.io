@@ -18,21 +18,21 @@ const Projects = () => {
                 <div className={styles["buttons-container"]}>
                     <button 
                         onClick={() => setSelectedFilter("web")}
-                        style={{ color: selectedFilter == "web" ? '#54d8ef' : 'white' }}
+                        style={{ color: selectedFilter === "web" ? '#54d8ef' : 'white' }}
                     >
                         Web
                     </button>
                     <span> / </span>
                     <button 
                         onClick={() => setSelectedFilter("mobile")}
-                        style={{ color: selectedFilter == "mobile" ? "#54d8ef" : 'white' }}
+                        style={{ color: selectedFilter === "mobile" ? "#54d8ef" : 'white' }}
                     >
                         Mobile
                     </button>
                     <span> / </span>
                     <button
                         onClick={() => setSelectedFilter("desktop")}
-                        style={{ color: selectedFilter == "desktop" ? "#54d8ef" : 'white' }}
+                        style={{ color: selectedFilter === "desktop" ? "#54d8ef" : 'white' }}
                     >
                         Desktop
                     </button>
@@ -40,9 +40,9 @@ const Projects = () => {
             </div>
             <div data-aos="fade-up">
                 {
-                    selectedFilter == 'web'
+                    selectedFilter === 'web'
                         ? <WebProjects />
-                        : selectedFilter == 'mobile'
+                        : selectedFilter === 'mobile'
                         ? <MobileProjects />
                         : <DesktopProjects />
                 }

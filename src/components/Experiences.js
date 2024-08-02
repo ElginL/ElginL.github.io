@@ -29,6 +29,7 @@ const Experiences = () => {
                             <img 
                                 className={hoveredLink !== null && hoveredLink !== index ? styles["company-image-shaded"]: styles["company-image"]} 
                                 src={data["companyImage"]} 
+                                alt={data["jobTitle"]}
                             />
                             <div className={styles["description-container"]}>
                                 <h2>

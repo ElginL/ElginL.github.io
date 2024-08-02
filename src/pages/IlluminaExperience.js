@@ -35,7 +35,7 @@ const IlluminaExperience = () => {
                         I learned .NET, utilizing its dependency injection container, exception handlers, middleware, API Controller, 
                         Entity Framework, EF Migrations for database migrations, and xUnit for writing test cases.
                     </p>
-                    <img src={CSharpImg} />
+                    <img src={CSharpImg} alt="c sharp" />
                 </div>
                 <div>
                     <h3>
@@ -48,7 +48,7 @@ const IlluminaExperience = () => {
                         Lastly, the different types of tokens and their functionalities (Access Token, Refresh Token, Identity Token, Client Token,
                         Anonymous Token)
                     </p>
-                    <img src={KeycloakImg} />
+                    <img src={KeycloakImg} alt="keycloak" />
                 </div>
                 <div>
                     <h3>
@@ -60,9 +60,9 @@ const IlluminaExperience = () => {
                         for each service and to manage their dependencies.
                     </p>
                     <div className={styles["images-container"]}>
-                        <img src={DockerImg} />
-                        <img src={KubernetesImg} />
-                        <img src={HelmImg} />
+                        <img src={DockerImg} alt="docker" />
+                        <img src={KubernetesImg} alt="kubernetes" />
+                        <img src={HelmImg} alt="helm" />
                     </div>
                 </div>
                 <div>
@@ -78,8 +78,8 @@ const IlluminaExperience = () => {
                         and developed reusable actions.
                     </p>
                     <div className={styles["images-container"]}>
-                        <img src={GhaImg} />
-                        <img src={BashImg} />
+                        <img src={GhaImg} alt="github actions" />
+                        <img src={BashImg} alt="bash" />
                     </div>
                 </div>
                 <div>
@@ -92,8 +92,8 @@ const IlluminaExperience = () => {
                         and traces from different services and display them in Grafana.
                     </p>
                     <div className={styles["images-container"]}>
-                        <img src={OpenTelemetryImg} />
-                        <img src={GrafanaImg} />
+                        <img src={OpenTelemetryImg} alt="OpenTelemetry" />
+                        <img src={GrafanaImg} alt="Grafana" />
                     </div>
                 </div>
                 <div>
@@ -105,7 +105,7 @@ const IlluminaExperience = () => {
                         Webhooks help reduce resource needs compared to polling, as the publisher notifies the subscriber only when necessary. 
                         Additionally, I learned about using message queues to decouple systems.
                     </p>
-                    <img src={RabbitMqImg} />
+                    <img src={RabbitMqImg} alt="rabbitmq" />
                 </div>
             </div>
             <Footer />
